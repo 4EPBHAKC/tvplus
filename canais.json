@@ -1,0 +1,160 @@
+[
+    {
+        "url": "https://new.m3u8.one/hbofamily/tracks-v1a1/mono.m3u8",
+        "currentProgram": "Filme de Ação",
+        "nextProgram": "Filme de Comédia",
+        "startTime": "18:00",
+        "nextTime": "20:00",
+        "logoUrl": "https://television-libre.online/img/hbofam.webp",
+        "status": "live"
+    },
+    {
+        "url": "https://new.m3u8.one/hboplus/tracks-v1a1/mono.m3u8",
+        "currentProgram": "Filme Agora",
+        "nextProgram": "Filme Após",
+        "startTime": "14:00",
+        "nextTime": "16:00",
+        "logoUrl": "https://redecanaistv.ec/assets/imgs-videos/Canais/thumb-hboplus.jpg",
+        "status": "live"
+    },
+    {
+        "name": "TNT",
+        "url": "https://new.m3u8.one/tnt/tracks-v1a1/mono.m3u8",
+        "logoUrl": "https://assets.b9.com.br/wp-content/uploads/2016/02/tntlogo1.png",
+        "currentProgram": "A definir",
+        "nextProgram": "A definir",
+        "startTime": "A definir",
+        "nextTime": "A definir",
+        "status": "live"
+    },
+    {
+        "name": "Star Channel",
+        "url": "https://new.m3u8.one/starchannel/tracks-v1a1/mono.m3u8",
+        "logoUrl": "https://uploads.metropoles.com/wp-content/uploads/2021/02/16164406/Canais-FOX-passam-a-se-chamar-STAR-.jpg",
+        "currentProgram": "A definir",
+        "nextProgram": "A definir",
+        "startTime": "A definir",
+        "nextTime": "A definir",
+        "status": "live"
+    },
+    {
+        "name": "Disney Channel",
+        "url": "https://new.m3u8.one/disneychannel/tracks-v1a1/mono.m3u8",
+        "logoUrl": "https://i0.wp.com/anmtv.com.br/wp-content/uploads/2023/10/disney-channel.jpg?resize=800%2C400&ssl=1",
+        "currentProgram": "A definir",
+        "nextProgram": "A definir",
+        "startTime": "A definir",
+        "nextTime": "A definir",
+        "status": "live"
+    },
+    {
+        "name": "Telecine Pipoca",
+        "url": "https://new.m3u8.one/telepipoca/tracks-v1a1/mono.m3u8",
+        "logoUrl": "https://minhaseriefavorita.com.br/wp-content/uploads/2021/11/programacao-telecine-pipoca-da-semana.jpg.webp",
+        "currentProgram": "A definir",
+        "nextProgram": "A definir",
+        "startTime": "A definir",
+        "nextTime": "A definir",
+        "status": "live"
+    },
+    {
+        "name": "Telecine Fun",
+        "url": "https://new.m3u8.one/telefun/tracks-v1a1/mono.m3u8",
+        "logoUrl": "https://static.guiadetv.com/channel/MbFadOpZRZAhxzDRFg0xn9bcEKq8O1p3AvV0J90j.png",
+        "currentProgram": "A definir",
+        "nextProgram": "A definir",
+        "startTime": "A definir",
+        "nextTime": "A definir",
+        "status": "live"
+    },
+    {
+        "name": "HBO 2",
+        "url": "https://new.m3u8.one/hbo2/tracks-v1a1/mono.m3u8",
+        "logoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjn3AkJKGcje1ZVLHVBS2h8A1Ej2InFO6xoQ&s",
+        "currentProgram": "A definir",
+        "nextProgram": "A definir",
+        "startTime": "A definir",
+        "nextTime": "A definir",
+        "status": "live"
+    },
+    {
+        "name": "Telecine Cult",
+        "url": "https://new.m3u8.one/telecult/tracks-v1a1/mono.m3u8",
+        "logoUrl": "https://www.papodecinema.com.br/wp-content/uploads/2016/09/20160929-793b7ea395ed2001b187776a8d259888.jpg",
+        "currentProgram": "A definir",
+        "nextProgram": "A definir",
+        "startTime": "A definir",
+        "nextTime": "A definir",
+        "status": "live"
+    },
+    {
+        "name": "FX",
+        "url": "https://new.m3u8.one/fx/tracks-v1a1/mono.m3u8",
+        "logoUrl": "https://logodix.com/logo/587595.png",
+        "currentProgram": "A definir",
+        "nextProgram": "A definir",
+        "startTime": "A definir",
+        "nextTime": "A definir",
+        "status": "live"
+    },
+    {
+        "name": "SPACE",
+        "url": "https://stream.m3u8.one/space/tracks-v1a1/mono.m3u8",
+        "logoUrl": "https://www.bastidoresdatv.com.br/wp-content/uploads/2022/02/Canal-SPACE.jpg",
+        "currentProgram": "A definir",
+        "nextProgram": "A definir",
+        "startTime": "A definir",
+        "nextTime": "A definir",
+        "status": "live"
+    },
+    {
+        "name": "SPORTV HD",
+        "url": "https://stream.m3u8.one/sportv/tracks-v1a1/mono.m3u8",
+        "logoUrl": "https://assets.goal.com/images/v3/blteffed3ec281cc517/sportv-logo-8.png?auto=webp&format=pjpg&width=3840&quality=60",
+        "currentProgram": "A definir",
+        "nextProgram": "A definir",
+        "startTime": "A definir",
+        "nextTime": "A definir",
+        "status": "live"
+    },
+    {
+        "name": "Discovery Turbo",
+        "url": "https://new.m3u8.one/discoveryturbo/tracks-v1a1/mono.m3u8",
+        "logoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzCHGvQz3PqW2AkAXFZgh2Rw_Iq9Jn5_7XOSEZF7GQ_9R-zIEuXaMVDyLsntZpnrc3t7A&usqp=CAU",
+        "currentProgram": "A definir",
+        "nextProgram": "A definir",
+        "startTime": "A definir",
+        "nextTime": "A definir",
+        "status": "live"
+    },
+    {
+        "name": "Warner",
+        "url": "https://new.m3u8.one/warnetv/tracks-v1a1/mono.m3u8",
+        "logoUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8bXz1mUbVdIz5pzrTahUb2n9QAkaJ4ksTqJwKiUYW1Gqgxd5j368V_4dG4HqbEP0O7dSi50XdtKPqP2-3OlAWMpu0wmNuPrcqyVExHk4vLo9CR52cUHAh3GtxSdOQWlSi3c0P9Z4n_y0/s1600/Warner.jpg",
+        "currentProgram": "A definir",
+        "nextProgram": "A definir",
+        "startTime": "A definir",
+        "nextTime": "A definir",
+        "status": "open"
+    },
+    {
+        "name": "HBO",
+        "url": "https://new.m3u8.one/hbo/tracks-v1a1/mono.m3u8",
+        "logoUrl": "https://yt3.googleusercontent.com/PuZ7IH2HmXELvtSqpCClxDHiBxrInVEWryTiXrcVxIFFKdx9WGGTkRVl4fZG3qa8veMNqb_G=s900-c-k-c0x00ffffff-no-rj",
+        "currentProgram": "A definir",
+        "nextProgram": "A definir",
+        "startTime": "A definir",
+        "nextTime": "A definir",
+        "status": "open"
+    },
+    {
+        "name": "HBO XTREME",
+        "url": "https://new.m3u8.one/hboxtreme/tracks-v1a1/mono.m3u8",
+        "logoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUGbj613doA_lyYhNByuF0DRhIk9yKSfzkLA&s",
+        "currentProgram": "A definir",
+        "nextProgram": "A definir",
+        "startTime": "A definir",
+        "nextTime": "A definir",
+        "status": "open"
+    }
+]
