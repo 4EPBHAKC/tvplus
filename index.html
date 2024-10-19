@@ -79,6 +79,7 @@
             background-color: rgba(0, 0, 0, 0.9);
             justify-content: center;
             align-items: center;
+            flex-direction: column; /* Adiciona esta linha para empilhar os itens verticalmente */
         }
 
         .loader {
@@ -88,6 +89,20 @@
             width: 100px;
             height: 100px;
             animation: spin 2s linear infinite;
+        }
+
+        .fullscreen-buttons {
+            margin-top: 20px;
+        }
+
+        .fullscreen-buttons button {
+            background-color: #000000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
         }
 
         @keyframes spin {
@@ -139,16 +154,17 @@
                 hls.on(Hls.Events.MANIFEST_PARSED, function () {
                     loader.style.display = 'none';
                     video.play();
-                    enterFullScreen(video); // Entrar em tela cheia
                 });
             } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
                 video.src = channelUrl;
                 video.addEventListener('loadedmetadata', function () {
                     loader.style.display = 'none';
                     video.play();
-                    enterFullScreen(video); // Entrar em tela cheia
                 });
             }
+
+            // Adiciona um estado ao histórico
+            history.pushState({ videoOpen: true }, '');
 
             // Forçar a orientação de tela para paisagem (somente mobile)
             if (screen.orientation && screen.orientation.lock) {
@@ -156,6 +172,22 @@
                     console.log('Falha ao bloquear orientação:', err);
                 });
             }
+
+            // Adiciona os botões de tela cheia
+            const fullscreenButtons = document.createElement('div');
+            fullscreenButtons.className = 'fullscreen-buttons';
+
+            const enterFullscreenButton = document.createElement('button');
+            enterFullscreenButton.textContent = 'Entrar em Tela Cheia';
+            enterFullscreenButton.onclick = () => enterFullScreen(video);
+
+            const exitFullscreenButton = document.createElement('button');
+            exitFullscreenButton.textContent = 'Sair de Tela Cheia';
+            exitFullscreenButton.onclick = () => exitFullScreen(video);
+
+            fullscreenButtons.appendChild(enterFullscreenButton);
+            fullscreenButtons.appendChild(exitFullscreenButton);
+            modal.appendChild(fullscreenButtons);
         }
 
         // Função para entrar em tela cheia
@@ -168,6 +200,19 @@
                 video.webkitRequestFullscreen();
             } else if (video.msRequestFullscreen) { // IE/Edge
                 video.msRequestFullscreen();
+            }
+        }
+
+        // Função para sair de tela cheia
+        function exitFullScreen(video) {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.mozCancelFullScreen) { // Firefox
+                document.mozCancelFullScreen();
+            } else if (document.webkitExitFullscreen) { // Chrome, Safari e Opera
+                document.webkitExitFullscreen();
+            } else if (document.msExitFullscreen) { // IE/Edge
+                document.msExitFullscreen();
             }
         }
 
@@ -185,7 +230,17 @@
             if (screen.orientation && screen.orientation.unlock) {
                 screen.orientation.unlock();
             }
+
+            // Remove o estado do histórico
+            history.back();
         }
+
+        // Manipular o evento de voltar do navegador
+        window.onpopstate = function (event) {
+            if (event.state && event.state.videoOpen) {
+                closeModal();
+            }
+        };
 
         // Função para buscar os canais do JSON
         function fetchChannels() {
