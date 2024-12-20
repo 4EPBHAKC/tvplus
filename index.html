@@ -246,15 +246,18 @@
 
             if (Hls.isSupported()) {
                 const hls = new Hls({
-                    xhrSetup: function (xhr) {
-                        xhr.open = function (method, url, async) {
-                            // Modificando a URL para garantir que usamos HTTP quando necessário
-                            url = fixUrlProtocol(url);
-
-                            XMLHttpRequest.prototype.open.call(xhr, method, url, async);
-                        };
+                    xhrSetup: function (xhr, url) {
+                        // REMOVA ISSO EM PRODUÇÃO. APENAS PARA TESTES LOCAIS.
+                        if (url.startsWith('https://')) {
+                            url = url.replace('https://', 'http://');
+                            console.warn("CONEXÃO INSEGURA (HTTP) UTILIZADA. NÃO USE ISSO EM PRODUÇÃO.");
+                        }
+                        xhr.open('GET', url);
                     }
                 });
+
+                hls.loadSource(channel.url);
+                hls.attachMedia(video);
 
                 hls.loadSource(channel.url);  // Usando a URL corrigida
                 hls.attachMedia(video);
