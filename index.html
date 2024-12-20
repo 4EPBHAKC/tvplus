@@ -236,13 +236,16 @@
 
             if (Hls.isSupported()) {
                 const hls = new Hls({
-                    xhrSetup: function (xhr, url) {
-                        if (url.startsWith("http://")) {
-                            console.warn("Carregando conteúdo inseguro: ", url);
-                        }
-                        xhr.open("GET", url, true); // Ignora a verificação HTTPS
+                    xhrSetup: function (xhr) {
+                        xhr.open = function (method, url, async) {
+                            if (url.startsWith('http:')) {
+                                console.warn('Permitindo conteúdo inseguro:', url);
+                            }
+                            XMLHttpRequest.prototype.open.call(xhr, method, url, async);
+                        };
                     }
                 });
+
                 hls.loadSource(channel.url);
                 hls.attachMedia(video);
                 hls.on(Hls.Events.MANIFEST_PARSED, function () {
@@ -257,10 +260,7 @@
                 });
             }
 
-            // Definir a largura da video-container
             document.querySelector('.video-container').style.width = rotationDegree ? '196%' : '100%';
-
-            // Atualiza o índice do canal atual
             currentChannelIndex = channelsList.findIndex(c => c.url === channel.url);
 
             document.addEventListener('fullscreenchange', () => {
@@ -270,23 +270,22 @@
             });
 
             history.pushState({ videoOpen: true }, '');
-            forceLandscape(); // Forçar modo paisagem
+            forceLandscape();
 
-            // Ocultar controles após 2 segundos
             setTimeout(hideControls, 2000);
         }
 
         function hideControls() {
             controls.style.opacity = '0';
-            closeButton.style.display = 'none'; // Oculta o botão de fechar
-            rotateButton.style.display = 'none'; // Oculta o botão de rotacionar
+            closeButton.style.display = 'none';
+            rotateButton.style.display = 'none';
             controlsVisible = false;
         }
 
         function showControls() {
             controls.style.opacity = '1';
-            closeButton.style.display = 'block'; // Mostra o botão de fechar
-            rotateButton.style.display = 'block'; // Mostra o botão de rotacionar
+            closeButton.style.display = 'block';
+            rotateButton.style.display = 'block';
             controlsVisible = true;
             clearTimeout(hideControlsTimeout);
             hideControlsTimeout = setTimeout(hideControls, 2000);
@@ -300,27 +299,18 @@
                 video.style.display = 'none';
             }
             loader.style.display = 'none';
-
-            // Resetar a largura da video-container para 100% ao fechar
             document.querySelector('.video-container').style.width = '100%';
-
             history.back();
         }
 
         function changeChannel(direction) {
-            if (channelsList.length === 0) return; // Verifica se há canais disponíveis
-
-            // Atualiza o índice do canal atual
+            if (channelsList.length === 0) return;
             currentChannelIndex += direction;
-
-            // Verifica os limites do índice
             if (currentChannelIndex < 0) {
-                currentChannelIndex = channelsList.length - 1; // Volta para o último canal se estiver no primeiro
+                currentChannelIndex = channelsList.length - 1;
             } else if (currentChannelIndex >= channelsList.length) {
-                currentChannelIndex = 0; // Volta para o primeiro canal se estiver no último
+                currentChannelIndex = 0;
             }
-
-            // Abre o canal selecionado
             openModal(channelsList[currentChannelIndex]);
         }
 
@@ -328,12 +318,12 @@
             fetch('https://raw.githubusercontent.com/4EPBHAKC/tvplus/refs/heads/main/canais.json')
                 .then(response => response.json())
                 .then(channels => {
-                    channelsList = channels; // Armazena os canais na lista global
+                    channelsList = channels;
                     channels.forEach((channel, index) => {
                         const channelDiv = document.createElement('div');
                         channelDiv.className = 'channel';
                         channelDiv.onclick = () => {
-                            currentChannelIndex = index; // Atualiza o índice atual
+                            currentChannelIndex = index;
                             openModal(channel);
                         };
 
@@ -366,9 +356,8 @@
         function rotateVideo() {
             rotationDegree = (rotationDegree + 90) % 360;
             video.style.transform = `rotate(${rotationDegree}deg)`;
-            // Muda a largura para 196% quando o vídeo for rotacionado
             document.querySelector('.video-container').style.width = '196%';
-            showControls(); // Mostra os controles após rotacionar
+            showControls();
         }
 
         fetchChannels();
