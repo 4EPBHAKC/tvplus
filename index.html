@@ -234,25 +234,37 @@
             video.pause();
             video.src = '';
 
+            // Função para forçar a troca de URL HTTPS para HTTP
+            function fixUrlProtocol(url) {
+                if (url.startsWith('https://')) {
+                    console.warn('Erro de certificado SSL detectado para a URL: ', url);
+                    url = url.replace('https://', 'http://'); // Alterando para HTTP
+                    console.warn('URL alterada para HTTP: ', url);
+                }
+                return url;
+            }
+
             if (Hls.isSupported()) {
                 const hls = new Hls({
                     xhrSetup: function (xhr) {
                         xhr.open = function (method, url, async) {
-                            if (url.startsWith('http:')) {
-                                console.warn('Permitindo conteúdo inseguro:', url);
-                            }
+                            // Modificando a URL para garantir que usamos HTTP quando necessário
+                            url = fixUrlProtocol(url);
+
                             XMLHttpRequest.prototype.open.call(xhr, method, url, async);
                         };
                     }
                 });
 
-                hls.loadSource(channel.url);
+                hls.loadSource(channel.url);  // Usando a URL corrigida
                 hls.attachMedia(video);
                 hls.on(Hls.Events.MANIFEST_PARSED, function () {
                     loader.style.display = 'none';
                     video.play();
                 });
             } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                // Para o caso em que o HLS não é suportado, utilizando a tag de vídeo diretamente
+                channel.url = fixUrlProtocol(channel.url); // Corrigir URL para HTTP se necessário
                 video.src = channel.url;
                 video.addEventListener('loadedmetadata', function () {
                     loader.style.display = 'none';
