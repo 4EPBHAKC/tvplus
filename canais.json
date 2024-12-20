@@ -1,21 +1,53 @@
 [
     {
-        "url": "http://1.nadom.top:80/25823588/63545251/5140466.m3u8",
+        "name": "HBO FAMILY",
+        "url": "http://zsamason.net/live/238124299/1343838/18760.m3u8",
         "currentProgram": "Filme de Ação",
         "nextProgram": "Filme de Comédia",
         "startTime": "18:00",
         "nextTime": "20:00",
-        "logoUrl": "https://television-libre.online/img/hbofam.webp",
-        "status": "live"
+        "logoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQycrEBFox3Z09tYw2GE8cGQlHbU_p47jq5JA&s",
+        "status": "open"
     },
     {
-        "url": "https://new.m3u8.one/hboplus/tracks-v1a1/mono.m3u8",
+        "name": "HBO PLUS",
+        "url": "https://zsamason.net/live/238124299/1343838/18766.m3u8",
         "currentProgram": "Filme Agora",
         "nextProgram": "Filme Após",
         "startTime": "14:00",
         "nextTime": "16:00",
         "logoUrl": "https://redecanaistv.ec/assets/imgs-videos/Canais/thumb-hboplus.jpg",
-        "status": "live"
+        "status": "open"
+    },
+    {
+        "name": "RecordTV MINAS",
+        "url": "http://zsamason.net/live/238124299/1343838/244099.m3u8",
+        "currentProgram": "Filme Agora",
+        "nextProgram": "Filme Após",
+        "startTime": "14:00",
+        "nextTime": "16:00",
+        "logoUrl": "http://beststorage4you.com:2095/logoscanais/RECORDTV.png",
+        "status": "open"
+    },
+    {
+        "name": "SBT",
+        "url": "http://zsamason.net/live/238124299/1343838/244185.m3u8",
+        "currentProgram": "Filme Agora",
+        "nextProgram": "Filme Após",
+        "startTime": "14:00",
+        "nextTime": "16:00",
+        "logoUrl": "http://beststorage4you.com:2095/logoscanais/SBT.png",
+        "status": "open"
+    },
+    {
+        "name": "HBO MUNDI",
+        "url": "http://zsamason.net/live/238124299/1343838/18772.m3u8",
+        "currentProgram": "Filme Agora",
+        "nextProgram": "Filme Após",
+        "startTime": "14:00",
+        "nextTime": "16:00",
+        "logoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvHgsTQSeUFUyabOg1QUGs1Sx5i9OkVwl6gE9UBcrGcPiqGAZKyNOPz19ZgIlZrfscg-c&usqp=CAU",
+        "status": "open"
     },
     {
         "name": "TNT",
@@ -25,87 +57,87 @@
         "nextProgram": "A definir",
         "startTime": "A definir",
         "nextTime": "A definir",
-        "status": "live"
+        "status": "open"
     },
     {
         "name": "Star Channel",
-        "url": "https://new.m3u8.one/starchannel/tracks-v1a1/mono.m3u8",
+        "url": "http://zsamason.net/live/238124299/1343838/597.m3u8",
         "logoUrl": "https://uploads.metropoles.com/wp-content/uploads/2021/02/16164406/Canais-FOX-passam-a-se-chamar-STAR-.jpg",
         "currentProgram": "A definir",
         "nextProgram": "A definir",
         "startTime": "A definir",
         "nextTime": "A definir",
-        "status": "live"
+        "status": "open"
     },
     {
         "name": "Disney Channel",
-        "url": "https://new.m3u8.one/disneychannel/tracks-v1a1/mono.m3u8",
+        "url": "http://fzcdn.vood.top/live/238124299/1343838/356.m3u8",
         "logoUrl": "https://i0.wp.com/anmtv.com.br/wp-content/uploads/2023/10/disney-channel.jpg?resize=800%2C400&ssl=1",
         "currentProgram": "A definir",
         "nextProgram": "A definir",
         "startTime": "A definir",
         "nextTime": "A definir",
-        "status": "live"
+        "status": "open"
     },
     {
         "name": "Telecine Pipoca",
-        "url": "https://new.m3u8.one/telepipoca/tracks-v1a1/mono.m3u8",
+        "url": "http://zsamason.net/live/238124299/1343838/628.m3u8",
         "logoUrl": "https://minhaseriefavorita.com.br/wp-content/uploads/2021/11/programacao-telecine-pipoca-da-semana.jpg.webp",
         "currentProgram": "A definir",
         "nextProgram": "A definir",
         "startTime": "A definir",
         "nextTime": "A definir",
-        "status": "live"
+        "status": "open"
     },
     {
         "name": "Telecine Fun",
-        "url": "https://new.m3u8.one/telefun/tracks-v1a1/mono.m3u8",
+        "url": "http://gzcdn.vood.top/live/238124299/1343838/623.m3u8",
         "logoUrl": "https://static.guiadetv.com/channel/MbFadOpZRZAhxzDRFg0xn9bcEKq8O1p3AvV0J90j.png",
         "currentProgram": "A definir",
         "nextProgram": "A definir",
         "startTime": "A definir",
         "nextTime": "A definir",
-        "status": "live"
+        "status": "open"
     },
     {
         "name": "HBO 2",
-        "url": "https://new.m3u8.one/hbo2/tracks-v1a1/mono.m3u8",
+        "url": "http://zsamason.net/live/238124299/1343838/18756.m3u8",
         "logoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjn3AkJKGcje1ZVLHVBS2h8A1Ej2InFO6xoQ&s",
         "currentProgram": "A definir",
         "nextProgram": "A definir",
         "startTime": "A definir",
         "nextTime": "A definir",
-        "status": "live"
+        "status": "open"
     },
     {
         "name": "Telecine Cult",
-        "url": "https://new.m3u8.one/telecult/tracks-v1a1/mono.m3u8",
+        "url": "http://zsamason.net/live/238124299/1343838/618.m3u8",
         "logoUrl": "https://www.papodecinema.com.br/wp-content/uploads/2016/09/20160929-793b7ea395ed2001b187776a8d259888.jpg",
         "currentProgram": "A definir",
         "nextProgram": "A definir",
         "startTime": "A definir",
         "nextTime": "A definir",
-        "status": "live"
+        "status": "open"
     },
     {
         "name": "FX",
-        "url": "https://new.m3u8.one/fx/tracks-v1a1/mono.m3u8",
+        "url": "http://zsamason.net/live/238124299/1343838/592.m3u8",
         "logoUrl": "https://logodix.com/logo/587595.png",
         "currentProgram": "A definir",
         "nextProgram": "A definir",
         "startTime": "A definir",
         "nextTime": "A definir",
-        "status": "live"
+        "status": "open"
     },
     {
         "name": "SPACE",
-        "url": "https://stream.m3u8.one/space/tracks-v1a1/mono.m3u8",
+        "url": "http://zsamason.net/live/238124299/1343838/705.m3u8",
         "logoUrl": "https://www.bastidoresdatv.com.br/wp-content/uploads/2022/02/Canal-SPACE.jpg",
         "currentProgram": "A definir",
         "nextProgram": "A definir",
         "startTime": "A definir",
         "nextTime": "A definir",
-        "status": "live"
+        "status": "open"
     },
     {
         "name": "SPORTV HD",
@@ -115,17 +147,17 @@
         "nextProgram": "A definir",
         "startTime": "A definir",
         "nextTime": "A definir",
-        "status": "live"
+        "status": "open"
     },
     {
         "name": "Discovery Turbo",
-        "url": "https://new.m3u8.one/discoveryturbo/tracks-v1a1/mono.m3u8",
+        "url": "https://zsamason.net/live/238124299/1343838/249227.m3u8",
         "logoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzCHGvQz3PqW2AkAXFZgh2Rw_Iq9Jn5_7XOSEZF7GQ_9R-zIEuXaMVDyLsntZpnrc3t7A&usqp=CAU",
         "currentProgram": "A definir",
         "nextProgram": "A definir",
         "startTime": "A definir",
         "nextTime": "A definir",
-        "status": "live"
+        "status": "open"
     },
     {
         "name": "Warner",
@@ -139,7 +171,7 @@
     },
     {
         "name": "HBO",
-        "url": "https://new.m3u8.one/hbo/tracks-v1a1/mono.m3u8",
+        "url": "https://zsamason.net/live/238124299/1343838/18752.m3u8",
         "logoUrl": "https://yt3.googleusercontent.com/PuZ7IH2HmXELvtSqpCClxDHiBxrInVEWryTiXrcVxIFFKdx9WGGTkRVl4fZG3qa8veMNqb_G=s900-c-k-c0x00ffffff-no-rj",
         "currentProgram": "A definir",
         "nextProgram": "A definir",
@@ -149,8 +181,58 @@
     },
     {
         "name": "HBO XTREME",
-        "url": "https://new.m3u8.one/hboxtreme/tracks-v1a1/mono.m3u8",
+        "url": "https://zsamason.net/live/238124299/1343838/18775.m3u8",
         "logoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUGbj613doA_lyYhNByuF0DRhIk9yKSfzkLA&s",
+        "currentProgram": "A definir",
+        "nextProgram": "A definir",
+        "startTime": "A definir",
+        "nextTime": "A definir",
+        "status": "open"
+    },
+    {
+        "name": "CINEMAX",
+        "url": "http://czcdn.vood.top/live/238124299/1343838/680.m3u8",
+        "logoUrl": "http://beststorage4you.com:2095/logoscanais/CINEMAX.png",
+        "currentProgram": "A definir",
+        "nextProgram": "A definir",
+        "startTime": "A definir",
+        "nextTime": "A definir",
+        "status": "open"
+    },
+    {
+        "name": "MEGAPIX",
+        "url": "https://zsamason.net/live/238124299/1343838/690.m3u8",
+        "logoUrl": "http://beststorage4you.com:2095/logoscanais/MEGAPIX.png",
+        "currentProgram": "A definir",
+        "nextProgram": "A definir",
+        "startTime": "A definir",
+        "nextTime": "A definir",
+        "status": "open"
+    },
+    {
+        "name": "SONY",
+        "url": "http://zsamason.net/live/238124299/1343838/700.m3u8",
+        "logoUrl": "http://beststorage4you.com:2095/logoscanais/SONYCHANNEL.png",
+        "currentProgram": "A definir",
+        "nextProgram": "A definir",
+        "startTime": "A definir",
+        "nextTime": "A definir",
+        "status": "open"
+    },
+    {
+        "name": "Paramount Network",
+        "url": "http://dzcdn.vood.top/live/238124299/1343838/695.m3u8",
+        "logoUrl": "http://beststorage4you.com:2095/logoscanais/PARAMOUNTNETWORK.png",
+        "currentProgram": "A definir",
+        "nextProgram": "A definir",
+        "startTime": "A definir",
+        "nextTime": "A definir",
+        "status": "open"
+    },
+    {
+        "name": "Studio Universal",
+        "url": "http://fzcdn.vood.top/live/238124299/1343838/711.m3u8",
+        "logoUrl": "http://beststorage4you.com:2095/logoscanais/STUDIOUNIVERSAL.png",
         "currentProgram": "A definir",
         "nextProgram": "A definir",
         "startTime": "A definir",
