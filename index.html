@@ -318,7 +318,7 @@
         }
 
         function fetchChannels() {
-            fetch('https://raw.githubusercontent.com/4EPBHAKC/tvplus/refs/heads/main/canais.json')
+            fetch('https://cors-anywhere.herokuapp.com/https://raw.githubusercontent.com/4EPBHAKC/tvplus/refs/heads/main/canais.json')
                 .then(response => response.json())
                 .then(channels => {
                     channelsList = channels; // Armazena os canais na lista global
